@@ -1,3 +1,5 @@
+# Create your own iterator! Can be infinite, or raise StopIteration under specific conditions
+
 class InfiniteIterator():
     # infinite iterator that returns all odd numbers
     def __iter__(self):

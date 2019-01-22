@@ -1,7 +1,7 @@
 class Queue(object):
     def __init__(self):
         self.items = []
-        
+
     def enqueue(self, item):
         self.items.append(item)
 
@@ -26,12 +26,17 @@ class HumanNode(object):
         if adjacent is None:
             adjacent = set()
 
+        # isinstance() returns True if the specified object is of the 
+        # specified type, otherwise False.
         assert isinstance(adjacent, set)
+        # assert condition:
+        # assert tests condition, and will trigger error if cond is false
         self.name = name
         self.adjacent = adjacent
 
 class FriendGraph(object):
-
+    # Undirected graphs: use two-element sets to represent them
+    # Adjacencies be tracked via matrix or array  
     def __init__(self):
 
         self.nodes = set()
